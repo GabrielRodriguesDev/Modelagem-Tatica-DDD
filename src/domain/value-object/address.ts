@@ -1,10 +1,3 @@
-
-
-    
-    
-
-
-
 export default class Address {
 
     /* Nota-se que são atributos privados sem setters então não permite alteração */
@@ -46,7 +39,7 @@ export default class Address {
     /* 
     Validação
     */
-    
+
     validate() {
         if (this._street.length === 0) {
             throw new Error("Street is required");
@@ -62,11 +55,11 @@ export default class Address {
         }
     }
 
-        /*
-    Podemos manipular os getters, fazendo retornar um endereço em um padrão americano
-    através de um método, podemos manipular a visualização como quisermos, porém não
-    podemos alterar os valores dos atributos.
-    */
+    /*
+Podemos manipular os getters, fazendo retornar um endereço em um padrão americano
+através de um método, podemos manipular a visualização como quisermos, porém não
+podemos alterar os valores dos atributos.
+*/
 
     toString() {
         return `${this._street}, ${this._number}, ${this._zip} ${this._city}`;
