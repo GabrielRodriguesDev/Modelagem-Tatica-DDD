@@ -68,7 +68,7 @@ describe("Unit test for user sequelize repository", () => {
         });
     });
 
-    //* Deve buscar o produto
+    //* Deve encontrar o produto
     it("should find a product", async () => {
         const productRepository = new ProductRepository();
         const product = new Product("1", "Product 1", 100);
@@ -86,7 +86,7 @@ describe("Unit test for user sequelize repository", () => {
         });
     });
 
-    //* Deve buscar todos os produtos
+    //* Deve encontrar todos os produtos
     it("should find all products", async () => {
         const productRepository = new ProductRepository();
         const product = new Product("1", "Product 1", 100);

@@ -69,7 +69,7 @@ describe("Customer repository test", () => {
         });
     });
 
-    //* Deve buscar o cliente
+    //* Deve encontrar o cliente
     it("should find a customer", async () => {
         const customerRepository = new CustomerRepository();
         const customer = new Customer("123", "Customer 1");
@@ -91,7 +91,7 @@ describe("Customer repository test", () => {
         }).rejects.toThrow("Customer not found");
     });
 
-    //* Deve buscar todos os clientes
+    //* Deve encontrar todos os clientes
     it("should find all customers", async () => {
         const customerRepository = new CustomerRepository();
         const customer1 = new Customer("123", "Customer 1");
